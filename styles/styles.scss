@@ -1,6 +1,60 @@
+@font-face{
+    font-family: Againts;
+    src:url('../fonts/againts-webfont.woff2');
+    font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
     width: 100%;
     height: 100%;
+
+    background:url(../images/background.svg) no-repeat;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
     margin: 0;
     padding: 0;
+}
+
+h1{
+    font-family: Againts,sans-serif;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    color:blue;
+    font-weight: 100;
+    margin-top: 64px;
+    line-height: 0.74px;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px 2px 3px rgba(0,0,0,0.3), -2px -2px 3px rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 2;
+}
+
+h2{
+    font-family: Againts,sans-serif;
+    font-size: 10rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 144px;
+    color: blue;
+    line-height: 0.74px;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px 2px 3px rgba(0,0,0,0.7), -2px -2px 3px rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 2;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+canvas{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 232px auto 64px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+
 }

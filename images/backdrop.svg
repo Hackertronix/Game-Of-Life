@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="879px" viewBox="0 0 1920 879" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV" fill="#65FF61">
+            <path d="M0,715.680593 L0,0 L1920,0 L1920,750.191145 C1606.8023,631.250962 1350.7636,613.151647 1151.88391,695.893198 C974.035414,769.884967 971.530577,784.437673 917.826568,810.160642 C881.448536,827.584872 800.955025,864.667357 705.84195,872.95012 C646.731333,878.09767 470.189491,897.855508 230.349653,810.160642 C185.279672,793.681287 108.496455,762.187937 0,715.680593 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
