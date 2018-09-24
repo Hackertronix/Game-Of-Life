@@ -5,6 +5,8 @@ const framesPerSecond = 8
 let width = window.innerWidth;
 let height = window.innerHeight;
 
+
+
 function makeAGrid() {
     let grid = new Array(columns);
 
@@ -43,7 +45,7 @@ const getNextGeneration = (grid) => {
 
             //compute 
             let cell = grid[i][j];
-        
+
             neighborCount = countNeighbours(grid, i, j);
             if (cell === 0 && neighborCount == 3) {
                 nextGrid[i][j] = 1;
@@ -78,7 +80,7 @@ const generateNewGen = (context, grid) => {
     const nextGeneration = getNextGeneration(grid);
     setTimeout(() => {
         requestAnimationFrame(() => generateNewGen(context, nextGeneration))
-      }, 1000/framesPerSecond);
+    }, 1000 / 1000);
 
 }
 
@@ -86,10 +88,15 @@ window.onload = () => {
 
     let canvas = document.getElementById('canvas');
     let context = canvas.getContext('2d');
+    let playButton = document.getElementById('playBtn')
     canvas.width = 1200;
     canvas.height = 600;
     const grid = makeAGrid();
-    //drawGrid(grid, context);
-    generateNewGen(context, grid);
+    drawGrid(grid, context);
+    playButton.addEventListener('click', () => {
+        canvas.setAttribute("style", "filter: blur(0px)");
+        playButton.style.visibility = 'hidden';
+        generateNewGen(context, grid);
+    })
 
 }
